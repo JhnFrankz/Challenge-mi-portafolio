@@ -1,0 +1,175 @@
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+
+    --primario: #F5F5F5;
+    --secundario: #EAF2FD;
+    --gris: #e1e1e1;
+    --blanco: #ffffff;
+    --negro: #000000;
+
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */    
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    /*
+    font-family: var(--fuenteParrafos);
+    line-height: 2;
+    */
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+}
+
+/** Globales **/
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 5.2rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/*              Utilidades              */
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.bg-primario {
+    background: var(--primario);
+}
+
+.bg-secundario {
+    background: var(--secundario);
+}
+
+/*                  Header                  */
+.barra {
+    display: flex;
+    justify-content: space-between;
+    padding: 3.2rem 0;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    align-self: center;
+}
+
+.navegacion {
+    display: flex;
+}
+
+.navegacion ul {
+    display: flex;
+}
+.navegacion ul li {
+    margin-right: 2rem;
+}
+
+.navegacion p {
+    font-weight: bold;
+}
+
+/*                         Main                        */
+
+/*   Seccion 1-Presentacion  */
+.presentacion {
+    padding: 8rem 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-redes {
+    display: flex;
+    align-items: center;
+}
+
+.nav-redes li {
+    margin-right: 4rem;
+}
+
+.nav-redes .item::after {
+    content: url(../img/Arrow.png);
+    margin: 1rem;
+}
+
+.presentacion-img img {
+    border-radius: 50%;
+}
+
+/*   Seccion 2-Sobre mi  */
+
+.sobremi {
+    padding: 6rem 0;
+}
+
+/*   Seccion 3-Skills  */
+.skills {
+    padding: 6rem 0;
+}
+
+.lista-skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*   Seccion 4-Hobbies  */
+
+.hobbies {
+    padding: 6rem 0;
+}
+
+.lista-hobbies {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
