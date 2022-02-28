@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3943885706.js" crossorigin="anonymous"></script>
     <title>Portafolio Jhan Espinoza</title>
 </head>
 
@@ -18,17 +19,17 @@
             <div class="barra">
                 <div class="logo">
                     <img src="img/Logo.png" alt="Logo">
-                    <p>Jhan Portafolio</p>
+                    <h6 class="no-margin">Jhan Portafolio</h6>
                 </div>
 
                 <div class="navegacion">
                     <nav>
                         <ul>
-                            <li>Sobre mi</li>
-                            <li>Skills</li>
-                            <li>Hobbies</li>
-                            <li>Formación</li>
-                            <li>Proyectos</li>
+                            <li><a href="#">Sobre mi</a></li>
+                            <li><a href="#">Skills</a>Skills</li>
+                            <li><a href="#">Hobbies</a></li>
+                            <li><a href="#">Formación</a></li>
+                            <li><a href="#">Proyectos</a></li>
                         </ul>
                     </nav>
 
@@ -81,26 +82,28 @@
                 <div class="skills">
                     <h2 class="no-margin">Skills</h2>
                     <div class="lista-skills">
-                        <div>
+                        <div class="caja">
+                            <i class="fa-brands fa-html5"></i>
                             <p>Html5</p>
                         </div>
-                        <div>
+                        <div class="caja">
+                            <i class="fa-brands fa-js-square"></i>
                             <p>Javascript</p>
                         </div>
-                        <div>
-                            <img src="" alt="">
+                        <div class="caja">
+                            <i class="fa-brands fa-php"></i>
                             <p>PHP</p>
                         </div>
-                        <div>
-                            <img src="" alt="">
+                        <div class="caja">
+                            <i class="fa-brands fa-node"></i>
                             <p>NodeJS</p>
                         </div>
-                        <div>
-                            <img src="" alt="">
+                        <div class="caja">
+                            <i class="fa-brands fa-react"></i>
                             <p>React</p>
                         </div>
-                        <div>
-                            <img src="" alt="">
+                        <div class="caja">
+                            <i class="fa-brands fa-css3-alt"></i>
                             <p>CSS</p>
                         </div>
                     </div>
@@ -113,28 +116,28 @@
                 <div class="hobbies">
                     <h2 class="no-margin">Hobbies</h2>
                     <div class="lista-hobbies">
-                        <div>
-                            <img src="" alt="">
+                        <div class="caja">
+                            <i class="fa-solid fa-person-skating"></i>
                             <p>Patinaje</p>
                         </div>
-                        <div>
-                            <img src="" alt="">
+                        <div class="caja">
+                            <i class="fa-solid fa-guitar"></i>
                             <p>Tocar bajo</p>
                         </div>
-                        <div>
-                            <img src="" alt="">
+                        <div class="caja">
+                            <i class="fa-solid fa-headphones"></i>
                             <p>Oir música</p>
                         </div>
-                        <div>
-                            <img src="" alt="">
+                        <div class="caja">
+                            <i class="fa-solid fa-tv"></i>
                             <p>Ver series</p>
                         </div>
-                        <div>
-                            <img src="" alt="">
+                        <div class="caja">
+                            <i class="fa-solid fa-utensils"></i>
                             <p>Cocinar</p>
                         </div>
-                        <div>
-                            <img src="" alt="">
+                        <div class="caja">
+                            <i class="fa-solid fa-camera"></i>
                             <p>Tomar fotos</p>
                         </div>
                     </div>
@@ -142,83 +145,117 @@
             </div>
         </section>
 
-        <section>
-            <h2>Formación académica</h2>
-
-            <div>
-                <img src="" alt="">
-                <h4>Ingeniería de Sistemas</h4>
-                <p>En curso</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Experiencia profesional</h2>
-
-            <div>
-                <div>
-                    <img src="" alt="">
-                </div>
-                <div>
-                    <h4>Encriptador de texto</h4>
-                    <p>Challenge Alura Codificador</p>
-                    <div>
-                        <a href="#">Repositorio</a>
-                        <a href="#">Ver demo</a>
+        <section class="bg-secundario">
+            <div class="contenedor">
+                <div class="formacion">
+                    <h2 class="no-margin">Formación académica</h2>
+        
+                    <div class="formacion__lista">
+                        <div class="formacion__lista__caja">
+                            <div class="formacion__lista__caja__img">
+                                <img src="img/fis_logo.png" alt="Logo facultad de sistemas -  Unica">
+                            </div>
+                            <h4>Ingeniería de Sistemas</h4>
+                            <p>En curso</p>
+                        </div>
+                        <div class="formacion__lista__caja">
+                            <div class="formacion__lista__caja__img">
+                                <img src="img/dibk1ba07iflqhldupuz.png" alt="">
+                            </div>
+                            <h4>Formación en Alura</h4>
+                            <p>En curso</p>
+                        </div>
+                        <div class="formacion__lista__caja">
+                            <div class="formacion__lista__caja__img">
+                                <img src="img/Oracle-Logo.png" alt="">
+                            </div>
+                            <h4>Formación en Oracle ONE</h4>
+                            <p>En curso</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <h4>Juego creado con HTML y JavaScript</h4>
-                    <p>Challenge Oracle</p>
-                    <div>
-                        <a href="#">Repositorio</a>
-                        <a href="#">Ver demo</a>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="" alt="">
                 </div>
             </div>
         </section>
 
-        <section>
-            <div>
-                <img src="" alt="">
+        <section class="bg-primario">
+            <div class="contenedor">
+                <div class="experiencia">
+                    <h2 class="no-margin">Experiencia profesional</h2>
+        
+                    <div class="experiencia__lista">
+                        <div class="experiencia__lista__img">
+                            <img src="img/ecriptador-img.png" alt="Imagen de proyecto 1">
+                        </div>
+                        <div class="experiencia__lista__info">
+                            <h4>Encriptador de texto</h4>
+                            <p>Challenge Alura Codificador</p>
+                            <div>
+                                <a class="btn btn-secundario" href="#">Repositorio</a>
+                                <a class="btn btn-primario" href="#">Ver demo</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="experiencia__lista">
+                        <div class="experiencia__lista__info">
+                            <h4>Juego creado con HTML y JavaScript</h4>
+                            <p>Challenge Oracle</p>
+                            <div>
+                                <a class="btn btn-secundario" href="#">Repositorio</a>
+                                <a class="btn btn-primario" href="#">Ver demo</a>
+                            </div>
+                        </div>
+        
+                        <div class="experiencia__lista__img">
+                            <img src="img/juego-ahorcado-img.png" alt="Imagen de proyecto 1">
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <form action="">
-                <h2>
-                    <legend>Contacto</legend>
-                </h2>
-                <p>¿Quieres contactarme?</p>
-                <p>Complete el siguiente formulario y me pondré en contacto con usted lo antes posible</p>
-                <div>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre">
+        <section class="bg-secundario">
+            <div class="contenedor">
+                <div class="contacto">
+                    <div class="contacto__img">
+                        <img src="img/contacto.png" alt="Imagen de contacto">
+                    </div>
+        
+                    <form action="" class="contacto__form">
+                        <h2>
+                            <legend>Contacto</legend>
+                        </h2>
+                        <p>¿Quieres contactarme?</p>
+                        <p>Complete el siguiente formulario y me pondré en contacto con usted lo antes posible</p>
+                        <div class="contacto__form__caja">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre">
+                        </div>
+                        <div class="contacto__form__caja">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email">
+                        </div>
+                        <div class="contacto__form__caja">
+                            <input type="text" placeholder="Asunto">
+                        </div>
+                        <div class="contacto__form__caja">
+                            <textarea cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        </div>
+        
+                        <input class="btn btn-primario" type="submit" value="Enviar mensaje">
+                    </form>
                 </div>
-                <div>
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email">
-                </div>
-                <div>
-                    <input type="text" placeholder="Asunto">
-                </div>
-                <div>
-                    <textarea cols="30" rows="10" placeholder="Mensaje"></textarea>
-                </div>
-
-                <input type="submit" value="Enviar mensaje">
-            </form>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>Desarrollado por Jhan Frank Espinoza Escudero - Perú</p>
-        <p>2022</p>
+        <div class="contenedor">
+            <div class="footer">
+                <p>Desarrollado por Jhan Frank Espinoza Escudero - Perú</p>
+                <p>2022</p>
+            </div>
+        </div>
     </footer>
 </body>
 

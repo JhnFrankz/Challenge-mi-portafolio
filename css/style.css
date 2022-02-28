@@ -1,13 +1,6 @@
 :root {
-    --fuenteHeading: 'PT Sans', sans-serif;
-    --fuenteParrafos: 'Open Sans', sans-serif;
-
     --primario: #F5F5F5;
     --secundario: #EAF2FD;
-    --gris: #e1e1e1;
-    --blanco: #ffffff;
-    --negro: #000000;
-
 }
 
 html {
@@ -20,10 +13,6 @@ html {
 }
 
 body {
-    /*
-    font-family: var(--fuenteParrafos);
-    line-height: 2;
-    */
     font-family: 'Raleway', sans-serif;
     font-size: 1.6rem;
 }
@@ -36,6 +25,7 @@ body {
 
 a {
     text-decoration: none;
+    color: #000000;
 }
 
 h1 {
@@ -43,15 +33,23 @@ h1 {
 }
 
 h2 {
-    font-size: 2.8rem;
+    font-size: 3.2rem;
 }
 
 h3 {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
 }
 
 h4 {
+    font-size: 2.4rem;
+}
+
+h5 {
     font-size: 2rem;
+}
+
+h6 {
+    font-size: 1.6rem;
 }
 
 img {
@@ -84,6 +82,25 @@ ul {
     background: var(--secundario);
 }
 
+.btn {
+    padding: 1.2rem 2.2rem;
+    font-weight: bold;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.btn-primario {
+    color: #ffffff;
+    background: #2626d6;
+    border: 0.1rem solid #2626d6;
+}
+
+.btn-secundario {
+    color: #2626d6;
+    background: transparent;
+    border: 0.1rem solid #2626d6;
+}
+
 /*                  Header                  */
 .barra {
     display: flex;
@@ -93,10 +110,12 @@ ul {
 
 .logo {
     display: flex;
+    align-items: center;
 }
 
 .logo img {
     align-self: center;
+    margin-right: 1rem;
 }
 
 .navegacion {
@@ -152,6 +171,10 @@ ul {
     padding: 6rem 0;
 }
 
+.skills h2 {
+    margin-bottom: 4rem;
+}
+
 .lista-skills {
     display: flex;
     justify-content: space-between;
@@ -164,12 +187,138 @@ ul {
     padding: 6rem 0;
 }
 
+.hobbies h2 {
+    margin-bottom: 4rem;
+}
+
 .lista-hobbies {
     display: flex;
     justify-content: space-between;
 }
 
+.caja {
+    width: 16%;
+    height: 13rem;
+    padding: 2rem;
+    text-align: center;
+    background: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja i {
+    color: #2626d6;
+    font-size: 4rem;
+}
+
+.caja p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/*   Seccion 5-Formación académica  */
+
+.formacion {
+    padding: 6rem 0;
+}
+
+.formacion h2 {
+    margin-bottom: 4rem;
+}
+
+.formacion__lista {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formacion__lista__caja {
+    width: 32%;
+}
+
+.formacion__lista__caja__img {
+    padding: 6rem;
+    display: flex;
+    height: 70%;
+    background: #ffffff;
+    align-items: center;
+}
+
+/*     Seccion 6 - Experiencia    */
+.experiencia {
+    padding: 6rem 0;
+}
+
+.experiencia h2 {
+    margin-bottom: 4rem;
+}
+
+.experiencia__lista {
+    display: flex;
+    margin-top: 4rem;
+}
+
+.experiencia__lista__img {
+    width: 70%;
+}
+
+.experiencia__lista__info {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 30%;
+    justify-content: center;
+}
+
+/*     Seccion 7 - Contacto    */
+.contacto {
+    padding: 6rem 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.contacto__img {
+    width: 40%;
+}
+
+.contacto__img img {
+    height: 100%;
+}
+
+.contacto__form {
+    width: 60%;
+}
+
+.contacto__form__caja {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    padding: 1rem 1rem;
+    border-radius: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.contacto__form__caja label {
+    padding-bottom: 1rem;
+    opacity: 50%;
+}
+
+.contacto__form__caja input,
+.contacto__form__caja textarea {
+    border: none;
+}
+
+.contacto__form__caja input:focus,
+.contacto__form__caja textarea:focus {
+    outline: none;
+}
 
 
+
+/*       Footer           */
+
+.footer {
+    padding: 3rem 0;
+    text-align: center;
+}
 
 
