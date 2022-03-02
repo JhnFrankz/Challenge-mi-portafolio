@@ -17,24 +17,22 @@
     <header class="header bg-primario">
         <div class="contenedor">
             <div class="barra">
-                <div class="logo">
+                <div class="barra__left">
                     <img src="img/Logo.png" alt="Logo">
                     <h6 class="no-margin">Jhan Portafolio</h6>
                 </div>
 
-                <div class="navegacion">
-                    <nav>
-                        <ul>
-                            <li><a href="#">Sobre mi</a></li>
-                            <li><a href="#">Skills</a>Skills</li>
-                            <li><a href="#">Hobbies</a></li>
-                            <li><a href="#">Formación</a></li>
-                            <li><a href="#">Proyectos</a></li>
-                        </ul>
-                    </nav>
+                <nav class="barra__right">
+                    <ul>
+                        <li><a class="barra__right__item" href="#">Sobre mi</a></li>
+                        <li><a class="barra__right__item" href="#">Skills</a></li>
+                        <li><a class="barra__right__item" href="#">Hobbies</a></li>
+                        <li><a class="barra__right__item" href="#">Formación</a></li>
+                        <li><a class="barra__right__item" href="#">Proyectos</a></li>
+                    </ul>
 
-                    <p>jhnfrankz@gmail.com</p>
-                </div>
+                    <p class="barra__right__email">jhnfrankz@gmail.com</p>
+                </nav>
             </div>
         </div>
     </header>
@@ -45,13 +43,12 @@
                 <div class="presentacion">
                     <div>
                         <h1>Soy Jhan Frank Espinoza Escudero y éste es mi portafolio web</h1>
-                        <p>Soy estudiante de Ingeniería de Sistemas en Perú y actualmente estoy participando del proyecto
-                            Oracle ONE en Alura Latam</p>
+                        <p>Soy estudiante de Ingeniería de Sistemas y actualmente estoy participando del proyecto Oracle ONE en Alura Latam</p>
                         <ul class="nav-redes">
-                            <li class="item">Github</li>
-                            <li class="item">Linkedin</li>
-                            <li class="item">Instagram</li>
-                            <li class="item">Currículo</li>
+                            <li class="item"><a href="https://github.com/JhnFrankz">Github</a></li>
+                            <li class="item"><a href="https://www.linkedin.com/in/jhan-frank-espinoza-escudero-814003203">Linkedin</a></li>
+                            <li class="item"><a href="https://www.instagram.com/jhnfrankz/">Instagram</a></li>
+                            <li class="item"><a href="#">Currículo</a></li>
                         </ul>
                     </div>
     
@@ -66,12 +63,8 @@
             <div class="contenedor">
                 <div class="sobremi">
                     <h2 class="no-margin">Sobre mi</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, iusto impedit harum reiciendis, hic
-                        minus perferendis, unde voluptatem excepturi modi consectetur iure illum aspernatur perspiciatis.
-                        Ratione tempora consequatur quo impedit!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum inventore hic in debitis ratione
-                        consectetur aperiam adipisci est temporibus, perspiciatis repudiandae dolore laudantium ducimus at vero
-                        vel quo quae. Saepe?</p>
+                    <p>Cómo mencioné antes, mi nombre es Jhan Frank Espinoza Escudero, tengo 22 años, soy de Perú y actualmente estoy cursando el 5to ciclo de la Carrera Universitaria de Ingeniería de Sistemas en la Universidad San Luis Gonzaga.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, corporis numquam, repudiandae dolorem voluptatem distinctio odio dignissimos perspiciatis tempora eum nobis suscipit voluptate consectetur iusto dolor rem assumenda neque ratione.</p>
                     <img src="" alt="">
                 </div>
             </div>
@@ -189,7 +182,7 @@
                         <div class="experiencia__lista__info">
                             <h4>Encriptador de texto</h4>
                             <p>Challenge Alura Codificador</p>
-                            <div>
+                            <div class="experiencia__lista__botones">
                                 <a class="btn btn-secundario" href="#">Repositorio</a>
                                 <a class="btn btn-primario" href="#">Ver demo</a>
                             </div>
@@ -200,7 +193,7 @@
                         <div class="experiencia__lista__info">
                             <h4>Juego creado con HTML y JavaScript</h4>
                             <p>Challenge Oracle</p>
-                            <div>
+                            <div class="experiencia__lista__botones">
                                 <a class="btn btn-secundario" href="#">Repositorio</a>
                                 <a class="btn btn-primario" href="#">Ver demo</a>
                             </div>
@@ -222,7 +215,7 @@
                     </div>
         
                     <form action="" class="contacto__form">
-                        <h2>
+                        <h2 class="no-margin">
                             <legend>Contacto</legend>
                         </h2>
                         <p>¿Quieres contactarme?</p>

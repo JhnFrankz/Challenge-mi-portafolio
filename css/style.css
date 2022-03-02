@@ -5,7 +5,7 @@
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%; /* 1 rem = 10px */    
+    font-size: 62.5%; 
 }
 
 *, *:before, *:after {
@@ -66,14 +66,6 @@ ul {
     margin: 0;
 }
 
-.no-padding {
-    padding: 0;
-}
-
-.centrar-texto {
-    text-align: center;
-}
-
 .bg-primario {
     background: var(--primario);
 }
@@ -108,32 +100,25 @@ ul {
     padding: 3.2rem 0;
 }
 
-.logo {
+.barra__left {
     display: flex;
     align-items: center;
 }
 
-.logo img {
-    align-self: center;
-    margin-right: 1rem;
-}
-
-.navegacion {
+.barra__right,
+.barra__right ul {
     display: flex;
 }
 
-.navegacion ul {
-    display: flex;
-}
-.navegacion ul li {
-    margin-right: 2rem;
+.barra__right__item {
+    margin-right: 3rem;
 }
 
-.navegacion p {
+.barra__right__email {
     font-weight: bold;
 }
 
-/*                         Main                        */
+/*                           Main                               */
 
 /*   Seccion 1-Presentacion  */
 .presentacion {
@@ -147,7 +132,7 @@ ul {
     align-items: center;
 }
 
-.nav-redes li {
+.nav-redes .item {
     margin-right: 4rem;
 }
 
@@ -235,9 +220,13 @@ ul {
     width: 32%;
 }
 
+.formacion__lista__caja h4 {
+    margin: 1rem 0 0 0;
+}
+
 .formacion__lista__caja__img {
-    padding: 6rem;
     display: flex;
+    padding: 6rem;
     height: 70%;
     background: #ffffff;
     align-items: center;
@@ -255,18 +244,22 @@ ul {
 .experiencia__lista {
     display: flex;
     margin-top: 4rem;
-}
-
-.experiencia__lista__img {
-    width: 70%;
+    gap: 2rem;
 }
 
 .experiencia__lista__info {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
-    width: 30%;
     justify-content: center;
+}
+
+.experiencia__lista__info h4 {
+    margin: 0;
+}
+
+.experiencia__lista__botones {
+    display: flex;
+    gap: 1rem;
 }
 
 /*     Seccion 7 - Contacto    */
@@ -310,6 +303,7 @@ ul {
 .contacto__form__caja input:focus,
 .contacto__form__caja textarea:focus {
     outline: none;
+    border-bottom: #2626d6;
 }
 
 
