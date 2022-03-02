@@ -28,20 +28,16 @@ a {
     color: #000000;
 }
 
-h1 {
-    font-size: 5.2rem;
-}
 
-h2 {
-    font-size: 3.2rem;
-}
+h1 { font-size: 2.8rem; }
+h2 { font-size: 2.6rem; }
 
 h3 {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
 }
 
 h4 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
 }
 
 h5 {
@@ -49,7 +45,7 @@ h5 {
 }
 
 h6 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 img {
@@ -105,13 +101,21 @@ ul {
     align-items: center;
 }
 
-.barra__right,
-.barra__right ul {
+.barra__right {
     display: flex;
+}
+.barra__right ul {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .barra__right ul {
+        display: flex;
+    }
 }
 
 .barra__right__item {
-    margin-right: 3rem;
+    margin-right: 1.5rem;
 }
 
 .barra__right__email {
@@ -119,41 +123,68 @@ ul {
 }
 
 /*                           Main                               */
+@media (min-width: 768px) {
+    h1 { font-size: 5.2rem; }
+    h2 { font-size: 3.2rem; }
+    h3 { font-size: 2.6rem; }
+    h4 { font-size: 2rem; }
+}
+/*Modificar de mayor 480 movil,  mayor 768 tablet y mayor a 1280 escritorio*/
 
 /*   Seccion 1-Presentacion  */
 .presentacion {
-    padding: 8rem 0;
     display: flex;
-    gap: 2rem;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+@media (min-width: 480px) {
+    .presentacion {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 768px) {
+    .presentacion {
+        padding: 8rem 0;
+        gap: 2rem;
+    }
 }
 
 .nav-redes {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-.nav-redes .item {
-    margin-right: 4rem;
+@media (min-width: 768px) {
+    .nav-redes {
+        justify-content: flex-start;
+    }
+
+    .nav-redes .item {
+        margin-right: 3%;
+    }
 }
 
-.nav-redes .item::after {
-    content: url(../img/Arrow.png);
-    margin: 1rem;
+.nav-redes .item i {
+    margin-left: 0.1rem;
+    transform: rotate(-135deg);
 }
 
 .presentacion-img img {
-    border-radius: 50%;
+    height: 100%;
 }
 
 /*   Seccion 2-Sobre mi  */
 
 .sobremi {
-    padding: 6rem 0;
+    padding: 3rem 0;
 }
 
 /*   Seccion 3-Skills  */
 .skills {
-    padding: 6rem 0;
+    padding: 3rem 0;
 }
 
 .skills h2 {
@@ -161,34 +192,27 @@ ul {
 }
 
 .lista-skills {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
 }
 
-
-/*   Seccion 4-Hobbies  */
-
-.hobbies {
-    padding: 6rem 0;
+@media (min-width: 480px) {
+    .lista-skills {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
-.hobbies h2 {
-    margin-bottom: 4rem;
-}
-
-.lista-hobbies {
-    display: flex;
-    justify-content: space-between;
+@media (min-width: 768px) {
+    .lista-skills {
+        grid-template-columns: repeat(6, 1fr);
+    }
 }
 
 .caja {
-    width: 16%;
-    height: 13rem;
     padding: 2rem;
     text-align: center;
     background: #ffffff;
-    justify-content: center;
-    align-items: center;
 }
 
 .caja i {
@@ -197,27 +221,57 @@ ul {
 }
 
 .caja p {
-    font-size: 1.2em;
+    font-size: 1.8rem;
     font-weight: bold;
+}
+
+/*   Seccion 4-Hobbies  */
+
+.hobbies {
+    padding: 3rem 0;
+}
+
+.hobbies h2 {
+    margin-bottom: 4rem;
+}
+
+.lista-hobbies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+@media (min-width: 480px) {
+    .lista-hobbies {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .lista-hobbies {
+        grid-template-columns: repeat(6, 1fr);
+    }
 }
 
 /*   Seccion 5-Formación académica  */
 
 .formacion {
-    padding: 6rem 0;
+    padding: 3rem 0;
 }
 
 .formacion h2 {
     margin-bottom: 4rem;
 }
 
-.formacion__lista {
-    display: flex;
-    justify-content: space-between;
-}
+@media (min-width: 768px) {
+    .formacion__lista {
+        display: flex;
+        justify-content: space-between;
+    }
 
-.formacion__lista__caja {
-    width: 32%;
+    .formacion__lista__caja {
+        width: 32%;
+    }
 }
 
 .formacion__lista__caja h4 {
@@ -226,25 +280,34 @@ ul {
 
 .formacion__lista__caja__img {
     display: flex;
-    padding: 6rem;
     height: 70%;
+    padding: 10% 20%;
     background: #ffffff;
     align-items: center;
+    justify-content: center;
 }
-
 /*     Seccion 6 - Experiencia    */
 .experiencia {
-    padding: 6rem 0;
-}
-
-.experiencia h2 {
-    margin-bottom: 4rem;
+    padding: 3rem 0;
 }
 
 .experiencia__lista {
     display: flex;
-    margin-top: 4rem;
+    flex-direction: column;
+    margin-top: 3rem;
     gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .experiencia__lista {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .experiencia__lista:last-of-type {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
 }
 
 .experiencia__lista__info {
@@ -263,24 +326,34 @@ ul {
 }
 
 /*     Seccion 7 - Contacto    */
+
 .contacto {
-    padding: 6rem 0;
-    display: flex;
-    gap: 2rem;
+    padding: 3rem 0;
 }
 
 .contacto__img {
-    width: 40%;
+    display: none;
 }
 
-.contacto__img img {
-    height: 100%;
-}
+@media (min-width: 768px) {
+    .contacto {
+        display: flex;
+        gap: 2rem;
+    }
 
-.contacto__form {
-    width: 60%;
-}
+    .contacto__img {
+        display: block;
+        width: 40%;
+    }
+    
+    .contacto__img img {
+        height: 100%;
+    }
 
+    .contacto__form {
+        width: 60%;
+    }
+}
 .contacto__form__caja {
     display: flex;
     flex-direction: column;
@@ -300,6 +373,11 @@ ul {
     border: none;
 }
 
+.contacto__form__caja textarea {
+    resize: none;
+    height: 12rem;
+}
+
 .contacto__form__caja input:focus,
 .contacto__form__caja textarea:focus {
     outline: none;
@@ -314,5 +392,3 @@ ul {
     padding: 3rem 0;
     text-align: center;
 }
-
-
