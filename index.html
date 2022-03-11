@@ -24,11 +24,11 @@
 
                 <nav class="barra__right">
                     <ul>
-                        <li><a class="barra__right__item" href="#">Sobre mi</a></li>
-                        <li><a class="barra__right__item" href="#">Skills</a></li>
-                        <li><a class="barra__right__item" href="#">Hobbies</a></li>
-                        <li><a class="barra__right__item" href="#">Formación</a></li>
-                        <li><a class="barra__right__item" href="#">Proyectos</a></li>
+                        <li><a class="barra__right__item" href="#seccion-sobremi">Sobre mi</a></li>
+                        <li><a class="barra__right__item" href="#seccion-skills">Skills</a></li>
+                        <li><a class="barra__right__item" href="#seccion-hobbies">Hobbies</a></li>
+                        <li><a class="barra__right__item" href="#seccion-formacion">Formación</a></li>
+                        <li><a class="barra__right__item" href="#seccion-experiencia">Proyectos</a></li>
                     </ul>
 
                     <p class="barra__right__email">jhnfrankz@gmail.com</p>
@@ -45,10 +45,10 @@
                         <h1>Soy Jhan Frank Espinoza Escudero y éste es mi portafolio web</h1>
                         <p>Soy estudiante de Ingeniería de Sistemas y actualmente estoy participando del proyecto Oracle ONE en Alura Latam</p>
                         <ul class="nav-redes">
-                            <li class="item"><a href="https://github.com/JhnFrankz">Github<i class="fa-solid fa-arrow-down"></i></a></li>
-                            <li class="item"><a href="https://www.linkedin.com/in/jhan-frank-espinoza-escudero-814003203">Linkedin<i class="fa-solid fa-arrow-down"></i></a></li>
-                            <li class="item"><a href="https://www.instagram.com/jhnfrankz/">Instagram<i class="fa-solid fa-arrow-down"></i></a></li>
-                            <li class="item"><a href="#">Currículo<i class="fa-solid fa-arrow-down"></i></a></li>
+                            <li class="item"><a href="https://github.com/JhnFrankz" target="_blank">Github<i class="fa-solid fa-arrow-down"></i></a></li>
+                            <li class="item"><a href="https://www.linkedin.com/in/jhan-frank-espinoza-escudero-814003203" target="_blank">Linkedin<i class="fa-solid fa-arrow-down"></i></a></li>
+                            <li class="item"><a href="https://www.instagram.com/jhnfrankz/" target="_blank">Instagram<i class="fa-solid fa-arrow-down"></i></a></li>
+                            <!--<li class="item"><a href="#">Currículo<i class="fa-solid fa-arrow-down"></i></a></li>-->
                         </ul>
                     </div>
     
@@ -61,7 +61,7 @@
 
         <section class="bg-secundario">
             <div class="contenedor">
-                <div class="sobremi">
+                <div class="sobremi" id="seccion-sobremi">
                     <h2 class="no-margin">Sobre mi</h2>
                     <p>Cómo mencioné antes, mi nombre es Jhan Frank Espinoza Escudero, tengo 22 años, soy de Perú y actualmente estoy cursando el 5to ciclo de la Carrera Universitaria de Ingeniería de Sistemas en la Universidad San Luis Gonzaga.</p>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, corporis numquam, repudiandae dolorem voluptatem distinctio odio dignissimos perspiciatis tempora eum nobis suscipit voluptate consectetur iusto dolor rem assumenda neque ratione.</p>
@@ -72,7 +72,7 @@
 
         <section class="bg-primario">
             <div class="contenedor">
-                <div class="skills">
+                <div class="skills" id="seccion-skills">
                     <h2 class="no-margin">Skills</h2>
                     <div class="lista-skills">
                         <div class="caja">
@@ -80,24 +80,24 @@
                             <p>Html5</p>
                         </div>
                         <div class="caja">
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <p>CSS</p>
+                        </div>
+                        <div class="caja">
                             <i class="fa-brands fa-js-square"></i>
                             <p>Javascript</p>
                         </div>
                         <div class="caja">
-                            <i class="fa-brands fa-php"></i>
-                            <p>PHP</p>
+                            <i class="fa-brands fa-java"></i>
+                            <p>Java</p>
                         </div>
                         <div class="caja">
-                            <i class="fa-brands fa-node"></i>
-                            <p>NodeJS</p>
+                            <i class="fa-solid fa-database"></i>
+                            <p>SQL</p>
                         </div>
                         <div class="caja">
                             <i class="fa-brands fa-react"></i>
                             <p>React</p>
-                        </div>
-                        <div class="caja">
-                            <i class="fa-brands fa-css3-alt"></i>
-                            <p>CSS</p>
                         </div>
                     </div>
                 </div>
@@ -106,7 +106,7 @@
 
         <section class="bg-primario">
             <div class="contenedor">
-                <div class="hobbies">
+                <div class="hobbies" id="seccion-hobbies">
                     <h2 class="no-margin">Hobbies</h2>
                     <div class="lista-hobbies">
                         <div class="caja">
@@ -140,7 +140,7 @@
 
         <section class="bg-secundario">
             <div class="contenedor">
-                <div class="formacion">
+                <div class="formacion" id="seccion-formacion">
                     <h2 class="no-margin">Formación académica</h2>
         
                     <div class="formacion__lista">
@@ -172,7 +172,7 @@
 
         <section class="bg-primario">
             <div class="contenedor">
-                <div class="experiencia">
+                <div class="experiencia" id="seccion-experiencia">
                     <h2 class="no-margin">Experiencia profesional</h2>
         
                     <div class="experiencia__lista">
@@ -183,8 +183,8 @@
                             <h4>Encriptador de texto</h4>
                             <p>Challenge Alura Codificador</p>
                             <div class="experiencia__lista__botones">
-                                <a class="btn btn-secundario" href="#">Repositorio</a>
-                                <a class="btn btn-primario" href="#">Ver demo</a>
+                                <a class="btn btn-secundario" href="https://github.com/JhnFrankz/Encriptador-challenge" target="_blank">Repositorio</a>
+                                <a class="btn btn-primario" href="https://jhnfrankz.github.io/Encriptador-challenge/" target="_blank">Ver demo</a>
                             </div>
                         </div>
                     </div>
@@ -198,8 +198,8 @@
                             <h4>Juego creado con HTML y JavaScript</h4>
                             <p>Challenge Oracle</p>
                             <div class="experiencia__lista__botones">
-                                <a class="btn btn-secundario" href="#">Repositorio</a>
-                                <a class="btn btn-primario" href="#">Ver demo</a>
+                                <a class="btn btn-secundario" href="https://github.com/JhnFrankz/Juego-Ahorcado-Challenge" target="_blank">Repositorio</a>
+                                <a class="btn btn-primario" href="https://jhnfrankz.github.io/Juego-Ahorcado-Challenge/" target="_blank">Ver demo</a>
                             </div>
                         </div>
                     </div>
@@ -209,7 +209,7 @@
 
         <section class="bg-secundario">
             <div class="contenedor">
-                <div class="contacto">
+                <div class="contacto" id="seccion-contacto">
                     <div class="contacto__img">
                         <img src="img/contacto.png" alt="Imagen de contacto">
                     </div>
