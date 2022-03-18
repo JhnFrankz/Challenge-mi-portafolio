@@ -342,6 +342,11 @@ ul {
     display: none;
 }
 
+.contacto__form {
+    display: grid;
+    gap: 3rem;
+}
+
 @media (min-width: 768px) {
     .contacto {
         display: flex;
@@ -363,22 +368,23 @@ ul {
 }
 
 .contacto__form__caja {
-    display: flex;
-    flex-direction: column;
-    background: #ffffff;
-    padding: 1rem 1rem;
-    border-radius: 0.8rem;
-    margin-bottom: 2rem;
+    position: relative;
 }
 
-.contacto__form__caja label {
-    padding-bottom: 1rem;
+.contacto__form__caja .form__label {
+    position: absolute;
     opacity: 50%;
+    transform: translateY(1rem);
+    transition: transform 0.5s;
 }
 
-.contacto__form__caja input,
-.contacto__form__caja textarea {
+.contacto__form__caja .form__input {
     border: none;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 1rem 0.5rem;
+    width: 100%;
+    outline: none;
 }
 
 .contacto__form__caja textarea {
@@ -386,10 +392,16 @@ ul {
     height: 12rem;
 }
 
-.contacto__form__caja input:focus,
-.contacto__form__caja textarea:focus {
-    outline: none;
-    border-bottom: #2626d6;
+.contacto__form__caja .form__input:focus {
+    border-bottom: 1px solid #197194;
+}
+
+.contacto__form__caja .form__input:focus + .form__label {
+    transform: translateY(-1.5rem) scale(0.7);
+}
+
+.contacto__form .form__input-error {
+    display: none;
 }
 
 
