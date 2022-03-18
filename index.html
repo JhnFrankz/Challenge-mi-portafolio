@@ -214,36 +214,39 @@
                         <img src="img/contacto.png" alt="Imagen de contacto">
                     </div>
         
-                    <form action="" class="contacto__form">
-                        <div class="contacto__form__caja">
+                    <form action="" class="contacto__form" id="formulario">
+                        <div>
                             <h2 class="no-margin">Contacto</h2>
                             <p>¿Quieres contactarme?</p>
                             <p>Complete el siguiente formulario y me pondré en contacto con usted lo antes posible</p>
                         </div>
                         
-                        <div class="contacto__form__caja">
+                        <div class="contacto__form__caja" id="grupo__nombre">
+                            <input class="form__input" id="nombre" name="nombre" type="text" placeholder=" ">
                             <label class="form__label" for="nombre">Nombre</label>
-                            <input class="form__input" id="nombre" type="text">
                             <p class="form__input-error">Su nombre debe contener entre 8 y 50 carácteres. Porfavor ingrese su nombre completo y use solo letras.</p>
                         </div>
-                        <div class="contacto__form__caja">
+
+                        <div class="contacto__form__caja" id="grupo__correo">
+                            <input class="form__input" id="email" name="correo" type="email" placeholder=" ">
                             <label class="form__label" for="email">E-mail</label>
-                            <input class="form__input" id="email" type="email">
                             <p class="form__input-error">El correo electrónica debe contener letras, numeros, puntos, guiones y guion bajo.</p>
                         </div>
-                        <div class="contacto__form__caja">
+
+                        <div class="contacto__form__caja" id="grupo__asunto">
+                            <input class="form__input" id="asunto" name="asunto" type="text" placeholder=" ">
                             <label class="form__label" for="asunto">Asunto</label>
-                            <input class="form__input" id="asunto" type="text" placeholder=" ">
                             <p class="form__input-error">Este campo no debe estar vacío.</p>
                         </div>
-                        <div class="contacto__form__caja">
+                        
+                        <div class="contacto__form__caja" id="grupo__mensaje">
+                            <textarea class="form__input" id="mensaje" name="mensaje" placeholder=" "></textarea>
                             <label class="form__label" for="mensaje">Mensaje (Opcional)</label>
-                            <textarea class="form__input" id="mensaje" placeholder=" "></textarea>
                         </div>
         
                         
                         <div class="contacto__form__caja">
-                            <input class="btn btn-primario" type="submit" value="Enviar mensaje">
+                            <button class="btn btn-primario" type="submit">Enviar mensaje</button>
                             <p class="form__input-error">¡Datos enviados correctamente!</p>
                         </div>
                     </form>
@@ -260,6 +263,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/index.js"></script>
 </body>
 
 </html>
