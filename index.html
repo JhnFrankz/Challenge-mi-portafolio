@@ -64,8 +64,6 @@
                 <div class="sobremi" id="seccion-sobremi">
                     <h2 class="no-margin">Sobre mi</h2>
                     <p>Cómo mencioné antes, mi nombre es Jhan Frank Espinoza Escudero, tengo 22 años, soy de Perú y actualmente estoy cursando el 5to ciclo de la Carrera Universitaria de Ingeniería de Sistemas en la Universidad San Luis Gonzaga.</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, corporis numquam, repudiandae dolorem voluptatem distinctio odio dignissimos perspiciatis tempora eum nobis suscipit voluptate consectetur iusto dolor rem assumenda neque ratione.</p>
-                    <img src="" alt="">
                 </div>
             </div>
         </section>
@@ -224,7 +222,7 @@
                         <div class="contacto__form__caja" id="grupo__nombre">
                             <input class="form__input" id="nombre" name="nombre" type="text" placeholder=" ">
                             <label class="form__label" for="nombre">Nombre</label>
-                            <p class="form__input-error">Su nombre debe contener entre 8 y 50 carácteres. Porfavor ingrese su nombre completo y use solo letras.</p>
+                            <p class="form__input-error">Su nombre debe contener máximo 50 carácteres. Porfavor ingrese su nombre completo y use solo letras.</p>
                         </div>
 
                         <div class="contacto__form__caja" id="grupo__correo">
@@ -241,12 +239,13 @@
                         
                         <div class="contacto__form__caja" id="grupo__mensaje">
                             <textarea class="form__input" id="mensaje" name="mensaje" placeholder=" "></textarea>
-                            <label class="form__label" for="mensaje">Mensaje (Opcional)</label>
+                            <label class="form__label" for="mensaje">Mensaje</label>
+                            <p class="form__input-error">Este campo no debe estar vacío.</p>
                         </div>
         
                         
                         <div class="contacto__form__caja">
-                            <button class="btn btn-primario" type="submit">Enviar mensaje</button>
+                            <button id="botonEnviar" class="btn btn-primario" type="submit">Enviar mensaje</button>
                             <p class="form__input-error">¡Datos enviados correctamente!</p>
                         </div>
                     </form>

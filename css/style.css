@@ -435,6 +435,10 @@ ul {
     display: block;
 }
 
+.btn:disabled {
+    opacity: 20%;
+    cursor: default;
+}
 
 /*       Footer           */
 

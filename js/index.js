@@ -1,5 +1,8 @@
 const formulario = document.getElementById("formulario");
-const inputs = document.querySelectorAll("#formulario input");
+const inputs = document.querySelectorAll("#formulario .form__input");
+const botonEnviar = document.getElementById("botonEnviar");
+
+console.log(inputs);
 
 const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
@@ -30,23 +33,32 @@ const validarFormulario = (e) => {
 			validarCampo(expresiones.mensaje, e.target, "mensaje");
 		    break;
 	}
+	
+	validarBoton();
 }
 
 const validarCampo = (expresion, input, campo) => {
 	if(expresion.test(input.value)){
 		document.getElementById(`grupo__${campo}`).classList.remove("contacto__form__caja-incorrecto");
 		document.getElementById(`grupo__${campo}`).classList.add("contacto__form__caja-correcto");
-		document.querySelector(`#grupo__${campo} .for__input-error`).classList.remove(".form__input-error-activo");
+		document.querySelector(`#grupo__${campo} .form__input-error`).classList.remove(".form__input-error-activo");
 		campos[campo] = true;
 	} else {
 		document.getElementById(`grupo__${campo}`).classList.add("contacto__form__caja-incorrecto");
 		document.getElementById(`grupo__${campo}`).classList.remove("contacto__form__caja-correcto");
-		document.querySelector(`#grupo__${campo} .for__input-error`).classList.add(".form__input-error-activo");
+		document.querySelector(`#grupo__${campo} .form__input-error`).classList.add(".form__input-error-activo");
 		campos[campo] = false;
 	}
 }
 
 inputs.forEach((input) => {
-	input.addEventListener("keyup", validarFormulario);
 	input.addEventListener("blur", validarFormulario);
 });
+
+function validarBoton() {
+	if(campos.nombre && campos.correo && campos.asunto && campos.mensaje) {
+		botonEnviar.disabled = false;
+	} else {
+		botonEnviar.disabled = true;
+	}
+}
