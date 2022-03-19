@@ -15,11 +15,6 @@ const campos = {
     mensaje: false
 }
 
-inputs.forEach((input) => {
-	input.addEventListener("keyup", validarFormulario);
-	input.addEventListener("blur", validarFormulario);
-});
-
 const validarFormulario = (e) => {
 	switch (e.target.name) {
 		case "nombre":
@@ -50,3 +45,8 @@ const validarCampo = (expresion, input, campo) => {
 		campos[campo] = false;
 	}
 }
+
+inputs.forEach((input) => {
+	input.addEventListener("keyup", validarFormulario);
+	input.addEventListener("blur", validarFormulario);
+});
