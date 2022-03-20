@@ -1,8 +1,7 @@
 const formulario = document.getElementById("formulario");
 const inputs = document.querySelectorAll("#formulario .form__input");
 const botonEnviar = document.getElementById("botonEnviar");
-
-console.log(inputs);
+botonEnviar.disabled = true;
 
 const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
@@ -61,4 +60,19 @@ function validarBoton() {
 	} else {
 		botonEnviar.disabled = true;
 	}
+}
+
+botonEnviar.addEventListener("click", enviarFormulario);
+
+function enviarFormulario(event) {
+	event.preventDefault();
+
+	/*
+	setTimeout(() => {
+		document.querySelector(".form__input-enviado").style.display = "block";
+	}, 3000);
+
+	document.querySelector(".form__input-enviado").style.display = "none"
+	*/
+
 }

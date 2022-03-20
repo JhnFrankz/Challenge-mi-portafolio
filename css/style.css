@@ -440,6 +440,10 @@ ul {
     cursor: default;
 }
 
+.form__input-enviado {
+    display: none;
+}
+
 /*       Footer           */
 
 .footer {
