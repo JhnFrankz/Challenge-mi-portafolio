@@ -4,10 +4,10 @@ const botonEnviar = document.getElementById("botonEnviar");
 botonEnviar.disabled = true;
 
 const expresiones = {
-	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+	nombre: /^[a-zA-ZÀ-ÿ\s]{1,50}$/, // Letras y espacios, pueden llevar acentos.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 	asunto: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
-	mensaje: /^[a-zA-ZÀ-ÿ\s]{1,40}$/
+	mensaje: /^[a-zA-ZÀ-ÿ\s]{1,300}$/
 }
 
 const campos = {
@@ -67,12 +67,10 @@ botonEnviar.addEventListener("click", enviarFormulario);
 function enviarFormulario(event) {
 	event.preventDefault();
 
-	/*
-	setTimeout(() => {
-		document.querySelector(".form__input-enviado").style.display = "block";
-	}, 3000);
+	inputs.forEach(input => {
+		input.value = "";
+		input.parentElement.classList.remove("contacto__form__caja-correcto");
+	});
 
-	document.querySelector(".form__input-enviado").style.display = "none"
-	*/
-
+	botonEnviar.disabled = true;
 }
